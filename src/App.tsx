@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
-import pic from "../Fishhh.jpg";
+import pic from "./Fishhh.jpg";
+import { Button, Col, Container, Row } from "react-bootstrap";
 
 function App(): JSX.Element {
     return (
@@ -14,6 +15,24 @@ function App(): JSX.Element {
                 automatically reload. Hello World
             </p>
             <img src={pic} width="100" height="50" />
+            <ol>
+                <li>GAAHHH</li>
+                <li>EUGHHH</li>
+                <li>BAHHHH</li>
+            </ol>
+            <Button onClick={() => console.log("Hello World!")}>
+                Log Hello World!
+            </Button>
+            <Container>
+                <Row>
+                    <Col>
+                        <div className="App-rectangle"></div>
+                    </Col>
+                    <Col>
+                        <div className="App-rectangle"></div>
+                    </Col>
+                </Row>
+            </Container>
         </div>
     );
 }

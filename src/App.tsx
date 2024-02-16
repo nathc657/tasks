@@ -14,7 +14,7 @@ function App(): JSX.Element {
                 Edit <code>src/App.tsx</code> and save. This page will
                 automatically reload. Hello World
             </p>
-            <header>HEADER??</header>
+            <h1>WOAH HEADER???</h1>
             <img src={pic} alt="FISH PIC PLEASE??" width="100" height="50" />
             <ol>
                 <li>GAAHHH</li>

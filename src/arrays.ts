@@ -29,7 +29,7 @@ export function tripleNumbers(numbers: number[]): number[] {
 export function stringsToIntegers(numbers: string[]): number[] {
     let count = 0;
     const ListofNumbers: number[] = [];
-    const numberified = numbers.map((word: string): void => {
+    numbers.map((word: string): void => {
         if (Number(word)) {
             ListofNumbers[count] = Number(word);
         } else {
@@ -51,7 +51,7 @@ export const removeDollars = (amounts: string[]): number[] => {
     //First Removed Money Sign
     let count = 0;
     const newList: string[] = [];
-    const removedMoneySign = amounts.map((amount: string): void => {
+    amounts.map((amount: string): void => {
         if (amount[0] === "$") {
             newList[count] = amount.substring(1);
         } else {
@@ -63,7 +63,7 @@ export const removeDollars = (amounts: string[]): number[] => {
     //Converts all numbers to numbers and non-numbinos to 0
     count = 0;
     const numbersOnly: number[] = [];
-    const checkForNonInt = newList.map((point: string): void => {
+    newList.map((point: string): void => {
         if (Number(point)) {
             numbersOnly[count] = Number(point);
         } else {
@@ -107,7 +107,7 @@ export function countShortWords(words: string[]): number {
  */
 export function allRGB(colors: string[]): boolean {
     let answer = true;
-    const output = colors.map((color: string): boolean =>
+    colors.map((color: string): boolean =>
         color !== "red" && color !== "blue" && color !== "green"
             ? (answer = false)
             : true
@@ -147,15 +147,13 @@ export function makeMath(addends: number[]): string {
  */
 export function injectPositive(values: number[]): number[] {
     const negativeIndex = values.findIndex((value: number) => value < 0);
-    const total = 0;
     if (negativeIndex === -1) {
         let total = 0;
-        const addAll = values.map((value: number) => (total += value));
+        values.map((value: number) => (total += value));
         const newList: number[] = [...values];
         newList.push(total);
         return newList;
     } else {
-        const count = 0;
         let left: number[] = [...values];
         left = left.filter(
             (value, index) => index < negativeIndex || index === negativeIndex

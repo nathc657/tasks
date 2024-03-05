@@ -1,4 +1,5 @@
-import React from "react";
+//import React from "react";
+import * as React from "react";
 import "./App.css";
 import { ChangeType } from "./components/ChangeType";
 import { RevealAnswer } from "./components/RevealAnswer";

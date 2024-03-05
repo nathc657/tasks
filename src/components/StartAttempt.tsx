@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
-import { start } from "repl";
 
 export function StartAttempt(): JSX.Element {
     const [inProgress, setProgress] = useState<boolean>(false);
